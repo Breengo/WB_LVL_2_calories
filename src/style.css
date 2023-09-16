@@ -1,0 +1,463 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.21);
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 18px;
+  text-align: center;
+}
+
+.button {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.footer_button {
+  margin-top: 5px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.116);
+  color: white;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.product_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.page_level {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.day_list {
+  width: 100%;
+  gap: 20px;
+}
+
+.day_list_item {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+  padding-bottom: 20px;
+}
+
+.day_list_items {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.day_list_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+  background-color: #242424;
+}
+
+.day_list_header > div {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+}
+
+.day_list_footer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  background-color: #242424;
+  padding-bottom: 20px;
+}
+
+.product_list {
+  width: 100%;
+  gap: 20px;
+}
+
+.product_list_item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+  padding-bottom: 20px;
+}
+
+.product_list_items {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.product_list_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+  background-color: #242424;
+}
+
+.product_list_header > div {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+}
+
+.product_list_footer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  background-color: #242424;
+  padding-bottom: 20px;
+}
+
+.product_list_footer > input {
+  width: 100%;
+}
+.all_day_list {
+  width: 100%;
+}
+
+.all_day_list_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.all_day_list_item > button {
+  width: 100px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.185);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.all_day_list_item > button:hover {
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+.all_day_list_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+  background-color: #242424;
+}
+
+.all_day_list_header > div {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+}
+.all_day_list_item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  justify-items: center;
+}
+
+.plus_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  border-radius: 20%;
+  transition: 0.3s;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.178);
+  padding: 0 25px;
+  border-radius: 15px;
+  height: 550px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.big_input {
+  width: 300px;
+}
+
+.small_input {
+  width: 100px;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  transform: translate(5px);
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.container::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.container::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 20px;
+}
+
+.calories_limit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.calories_limit > input {
+  display: none;
+}
+
+.graph {
+  padding-top: 20px;
+}
+
+.graph_picture {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  gap: 20px;
+  height: 80%;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+  overflow-x: auto;
+  padding: 0 20px;
+  transform: rotate(180deg);
+  overflow-y: hidden;
+}
+
+.graph_entity {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-weight: 600;
+  rotate: 180deg;
+}
+
+.graph_entity_calories {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  top: -30px;
+}
+
+.graph_picture::-webkit-scrollbar {
+  height: 8px;
+  transform: translate(5px);
+  transform: rotate(90deg);
+}
+
+.graph_picture::-webkit-scrollbar-track {
+  background-color: transparent;
+  transform: rotate(90deg);
+}
+
+.graph_picture::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 20px;
+}
+
+@media (max-width: 1920px) {
+  body {
+    font-size: 12px;
+  }
+  .graph_entity {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 600;
+    rotate: 180deg;
+  }
+
+  .graph_entity_calories {
+    font-size: 10px;
+    top: -15px;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .big_input {
+    width: 200px;
+  }
+
+  .small_input {
+    width: 60px;
+  }
+
+  .button {
+    width: 200px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .container {
+    padding: 0 15px;
+    border-radius: 10px;
+    height: 450px;
+    width: 100%;
+  }
+
+  .all_day_list_item > button {
+    width: fit-content;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .plus_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    border-radius: 20%;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Калькулятор калорий</h1>
+    <div class="page_level">
+      <form class="product_add container">
+        <h2>Добавить продукт</h2>
+        <input class="big_input" placeholder="Название" type="text" />
+        <input class="big_input" placeholder="Калории на грамм" type="text" />
+        <button id="add_product_button" class="button">Добавить</button>
+      </form>
+      <div class="day_list container">
+        <div class="day_list_header">
+          <h2>День 1</h2>
+          <div>
+            <p>Название</p>
+            <p>Калории на грамм</p>
+            <p>Вес</p>
+            <p>Калории</p>
+            <p>Удалить</p>
+          </div>
+        </div>
+        <div class="day_list_items">
+          <!--
+        <div class="day_list_item">
+          <p>Название</p>
+          <p>Калории</p>
+          <p>Граммы</p>
+          <p>Итого</p>
+          <button class="plus_button">-</button>
+        </div>-->
+        </div>
+        <div class="day_list_footer">
+          <p>Итого: 2000 Калорий</p>
+          <button class="footer_button">Добавить день</button>
+        </div>
+      </div>
+
+      <div class="product_list container">
+        <div class="product_list_header">
+          <h2>Продукты</h2>
+          <div>
+            <p>Название</p>
+            <p>Калории на грамм</p>
+            <p>Вес</p>
+            <p>Добавить</p>
+            <p>Удалить</p>
+          </div>
+        </div>
+        <div class="product_list_items">
+          <!-- 
+          <div class="product_list_item">
+            <p>Название</p>
+            <p>Калории</p>
+            <input type="text" />
+            <button class="plus_button">+</button>
+          </div>
+        --></div>
+        <div class="product_list_footer">
+          <input type="text" placeholder="Название продукта" />
+        </div>
+      </div>
+    </div>
+    <div class="page_level">
+      <form class="calories_limit container">
+        <h2>Лимит калорий</h2>
+        <p>1000 Калорий</p>
+        <input placeholder="Калорий" class="big_input" type="text" />
+        <button class="button">Изменить</button>
+      </form>
+      <div class="all_day_list container">
+        <div class="all_day_list_header"><h2>Список дней</h2></div>
+        <div class="all_day_list_items"></div>
+      </div>
+      <div class="graph container">
+        <h2>График</h2>
+        <div class="graph_picture"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
